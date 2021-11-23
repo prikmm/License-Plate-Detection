@@ -17,6 +17,7 @@ For a detailed inference notebook, look here - [inference notebook](https://gith
 * Use [training notebook](https://github.com/prikmm/License-Plate-Detection/blob/main/Train_Model_Conversion_Notebook.ipynb) to train the model. All that is required is to to configure the dataset paths in the initial ```yaml``` file.
 * Once, the model is trained, download the model and use [inference notebook](https://github.com/prikmm/License-Plate-Detection/blob/main/inference.ipynb) to test the ```TFLite``` model out. The only thing required is to configure the model path correctly. That's all!
 
+For a complete 300 epoch run: check out this [kaggle notebook](https://www.kaggle.com/priyammehta/license-plate-detection-using-yolov5/notebook)
 
 ### My Approach to the Problem:
 
