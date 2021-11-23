@@ -12,6 +12,8 @@ The model has an average inference time of ~0.160s, which gives more than +5 FPS
 
 For a detailed inference notebook, look here - [inference notebook](https://github.com/prikmm/License-Plate-Detection/blob/main/inference.ipynb). If run on local machine, then even real-time license plate detection can be performed. Use google on your smartphone to get new license plate images 😆.
 
+****All the data - 3 Datasets (different formats) and My YoloV5 model are present [here](https://drive.google.com/file/d/1ALTC356iZxLafkiRqG1AfvnM9UyDqYpe/view?usp=sharing)****
+
 ### How to run:
 * The project is divided into two notebooks - Training-n-Model-Conversion and Inference.
 * Use [training notebook](https://github.com/prikmm/License-Plate-Detection/blob/main/Train_Model_Conversion_Notebook.ipynb) to train the model. All that is required is to to configure the dataset paths in the initial ```yaml``` file.
@@ -43,8 +45,6 @@ I played with a couple of combinations for Data-Augmentation and saw some intere
 I included Saturation, Exposure, and Noise in Augmentation Pipeline to solely generate more real-world data and make the model better. But, I was only able to achieve ***~0.91 mAP@0.5*** and ***~0.5 mAP@[.5:.95]***. When I added Mosaic into the pipeline, these metrics shot up like crazy. Now, my best model is getting ***~0.966mAP@0.5*** and ***~0.847@mAP[.5:.95]***. I presume adding mosaic into the pipeline generated images containing license plates of varied sizes and numbers. This combined with the rest 3 augmentation steps, created a very robust dataset. 
 
 The dataset has been exported into 3 formats - YoloV5, PascalVoc & COCO and already uploaded on my google drive. The notebooks have been configured to download them.
-
-****All the data - 3 Datasets (different formats) and My YoloV5 model are present [here](https://drive.google.com/file/d/1ALTC356iZxLafkiRqG1AfvnM9UyDqYpe/view?usp=sharing)****
 
 #### Model Training:
 
